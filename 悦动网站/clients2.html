@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+	<title>无氧运动</title>
+	
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/zoomslider.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
+	<link href="css/swipebox.css" rel="stylesheet">
+	<link href="css/style-pink.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<link href="css/c97fed89bc324564b20f90a68d851f59.css" rel="stylesheet"> 
+
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+	<style>
+		
+		.wyyd{
+			text-align: center;
+			padding: 20px;
+		}
+	</style>
+
+	<style>
+		*{
+			cursor: url(images/aqy.ico),auto
+		}
+		.snow-container {
+		  position: absolute;
+		  height: 2010px;
+		  width: 100%;
+		  max-width: 100%;
+		  top: 0;
+		  overflow: hidden;
+		  z-index: 2;
+		  pointer-events: none;
+		 
+		}
+		
+		.snow {
+		  display: block;
+		  position: absolute;
+		  z-index: 2;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  pointer-events: none;
+		  -webkit-transform: translate3d(0, -100%, 0);
+		          transform: translate3d(0, -100%, 0);
+		  -webkit-animation: snow linear infinite;
+		          animation: snow linear infinite;
+		}
+		.snow.foreground {
+		  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+		  -webkit-animation-duration: 15s;
+		          animation-duration: 15s;
+		}
+		.snow.foreground.layered {
+		  -webkit-animation-delay: 7.5s;
+		          animation-delay: 7.5s;
+		}
+		.snow.middleground {
+		  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+		  -webkit-animation-duration: 20s;
+		          animation-duration: 20s;
+		}
+		.snow.middleground.layered {
+		  -webkit-animation-delay: 10s;
+		          animation-delay: 10s;
+		}
+		.snow.background {
+		  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+		  -webkit-animation-duration: 30s;
+		          animation-duration: 30s;
+		}
+		.snow.background.layered {
+		  -webkit-animation-delay: 15s;
+		          animation-delay: 15s;
+		}
+		
+		@-webkit-keyframes snow {
+		  0% {
+		    -webkit-transform: translate3d(0, -100%, 0);
+		            transform: translate3d(0, -100%, 0);
+		  }
+		  100% {
+		    -webkit-transform: translate3d(15%, 100%, 0);
+		            transform: translate3d(15%, 100%, 0);
+		  }
+		}
+		
+		@keyframes snow {
+		  0% {
+		    -webkit-transform: translate3d(0, -100%, 0);
+		            transform: translate3d(0, -100%, 0);
+		  }
+		  100% {
+		    -webkit-transform: translate3d(15%, 100%, 0);
+		            transform: translate3d(15%, 100%, 0);
+		  }
+		}
+	</style>
+		
+	</style>>
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div class="snow-container">
+  <div class="snow foreground"></div>
+  <div class="snow foreground layered"></div>
+  <div class="snow middleground"></div>
+  <div class="snow middleground layered"></div>
+  <div class="snow background"></div>
+  <div class="snow background layered"></div>
+</div>
+	<nav class="navbar navbar-fixed-top dark">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar middle-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+				</button>
+				<a class="logo" href="index.html"><img src="images/logo-pink.png" alt="StarGym"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			
+				<div id="search">
+					<form>
+						<div class="input-div"><input type="text" name="search" value="" placeholder="Search"></div>
+						<a href="#" class="search-icon fa fa-search"></a>
+					</form>
+				</div>			
+				<ul class="nav navbar-nav">
+						<li ><a href="index.html">首页</a></li>
+						<li class="hasSub active"><a href="about.html">健身教程</a>
+							<ul>
+								<li><a href="clients.html">无氧训练</a></li>
+								<li><a href="gallery-2.html">街健神技训练</a></li>
+								<li><a href="gallery-3.html">有氧运动</a></li>
+							</ul>
+						</li>
+						<li class="hasSub"><a href="blog.html">营养博客</a>
+							<ul>
+								<li><a href="post.html">营养饮食</a></li>
+								<li><a href="coach_full.html">睡眠</a></li>
+							</ul>
+						</li>
+						
+	
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+			</div>		
+		</div>
+	</nav>
+	
+
+	<header>
+		<div class="container">
+			<h1>无氧<span>运动</span></h1>
+			<ol class="bread">
+				<li>
+					<a href="index.html"><span>主页</span></a>
+				</li>
+				<li class="divider"><span>|</span></li>
+				<li>
+					<span>无氧运动</span>
+				</li>
+			</ol>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="clients-list">
+			<div class="row masonry">
+				<div class="col-sm-12 item">
+					<div class="person">
+						<h1 class="wyyd">无氧运动的好处</h1>
+						<div class="name">1、提升骨质密度</div>
+					</div>
+					<div class="text">
+				无氧运动对提升肌肉的耐力和速度有很大的贡献,无氧运动属于力量型运动,可以提升骨质密度,降低骨质疏松的风险。有关专家对此也进行过研究表明:无氧运动相对有氧运动,可以更好的提升骨质密度。
+					</div>				
+				</div>
+				<div class="col-sm-12 item">
+					<div class="person">
+						<div class="name">2、能够增加肺活量</div>
+					</div>
+					<div class="text">
+					在进行无氧运动时,对于训练者的肺活量有很好的挑战,如果长期进行无氧运动训练,可以很好的提升大家的肺活量。
+					</div>				
+				</div>
+				<div class="col-sm-12 item">
+					<div class="person">
+						<div class="name">3、促进血液流通</div>
+					</div>
+					<div class="text">
+					现在生活中人们忙于工作,使得身体各个部位都有或多或少的疾病,其中颈椎病的人数居多,这时不妨试试无氧运动,进行无氧运动时,身体血液流通比较快,可以更好的缓解这种疾病。
+					</div>				
+				</div>
+				<div class="col-sm-12 item">
+					<div class="person">
+						<div class="name">4、提升肌肉力量</div>
+					</div>
+					<div class="text">
+				无氧运动是训练肌肉的,在日复一日的训练过程中,各项部位的肌肉力量也都会有一定的提升,比如:练习举重,可以增强腿部肌肉的力量、杠铃训练可以提升手臂力量等。
+					</div>				
+				</div>
+				<div class="col-sm-12 item">
+					<div class="person">
+						<div class="name">5、具有减肥的效果</div>
+					</div>
+					<div class="text">
+				相比有氧运动,其“减脂”效果,并不体现在“运动时”,而是体现在“运动后”,达到即使不运动,也在“减肥”的效果。
+					</div>				
+				</div>
+					
+			</div>
+			<div class="pages">
+				<a href="clients.html" class="back disabled"><span class="fa fa-arrow-circle-left"></span>上一页</a>
+				<a href="clients.html" class="page">1</a>
+				<a href="clients2.html" class="page active">2</a>
+				<a href="clients3.html" class="page">3</a>
+				<a href="clients3.html" class="next">下一页<span class="fa fa-arrow-circle-right"></span></a>
+			</div>			
+		</div>
+
+	</div>
+		<section class="block-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-ms-12">
+					<img src="images/logo-pink.png" class="logo" alt="Stargym">
+				</div>
+				<div class="col-lg-2 col-md-2 hidden-sm hidden-xs hidden-ms">					
+				<h5>训练</h5>
+				</div>
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+					<h5>输入你的联系方式</h5>
+				</div>
+				<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+					<h5>合理搭配食物健身效果更佳哦</h5>
+				</div>
+				<div class="col-lg-4 col-md-4 col-ms-6 block-contacts border-right">
+					<p>健身使你健康</p>
+					<ul class="address">
+						<li><span class="fa fa-map-marker"></span>柳州职业技术学院</li>
+						<li><span class="fa fa-phone"></span>10086</li>
+						<li><span class="fa fa-envelope"></span><a href="#">123456789@qq.com</a></li>
+					</ul>
+					<ul class="social social-big">
+						<li><a href="#" class="social-fb fa fa-facebook"></a></li>
+						<li><a href="#" class="social-twitter fa fa-twitter"></a></li>
+						<li><a href="#" class="social-youtube fa fa-youtube"></a></li>
+						<li><a href="#" class="social-inst fa fa-instagram"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-ms-6 menu-footer border-right">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+							<h5 class="hidden-md hidden-lg">Trainings</h5>
+							<ul>
+								<li><a target="_blank" href="coming.html">健身训练</a></li>
+										<li><a target="_blank" href="index.html">寻找你的健康</a></li>
+										<li><a target="_blank" href="https://baijiahao.baidu.com/s?id=1601309302772868482&wfr=spider&for=pc">健康生活</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+									<h5>健身房</h5>
+									<ul>
+										<li><a target="_blank" href="about.html">训练</a></li>
+										<li><a target="_blank" href="https://baike.baidu.com/item/%E5%81%A5%E8%BA%AB%E6%95%99%E7%BB%83/7128289?fr=aladdin">什么是健身教练</a></li>
+										<li><a target="_blank" href="cards.html">俱乐部会员</a></li>
+										<li><a target="_blank" href="blog.html">博客</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12 border-right">
+					<h5 class="hidden-md hidden-lg">Contact us</h5>
+					<form><input type="text" name="name" placeholder="你的名字"><input type="text" name="email" placeholder="邮箱"><textarea
+						 name="text" placeholder="输入内容"></textarea><input type="submit" name="发送" value="发送" class="btn btn-pink btn-black-bg"></form>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12">
+					<h5 class="hidden-md hidden-lg">Gallery</h5>
+					<div class="gallery clearfix"><a href="#"><img src="picture/_footer-photo-1.png" alt="Gallery"></a><a href="#"><img
+							 src="picture/_footer-photo-2.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-3.png" alt="Gallery"></a><a
+						 href="#"><img src="picture/_footer-photo-4.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-5.png"
+							 alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-6.png" alt="Gallery"></a></div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>	
+
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollto-1.4.2-min.js"></script>
+
+
+	<script type="text/javascript" src="js/collapse.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.js"></script>
+	<script type="text/javascript" src="js/countup.js"></script>
+	<script type="text/javascript" src="js/swiper.jquery.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.matchheight.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.zoomslider.js"></script>
+	
+    <script src="js/map-pink.js"></script>
+
+	<script type="text/javascript" src="js/scripts.js"></script>		
+
+	 
+	
+	
+</body>
+</html>

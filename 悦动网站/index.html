@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" type="image/png" href="assets/images/favicon.png">
+		<title>悦动fitness</title>
+		<link href="css/bootstrap-grid.css" rel="stylesheet">
+		<link href="css/font-awesome.css" rel="stylesheet">
+		<link href="css/zoomslider.css" rel="stylesheet">
+		<link href="css/swiper.css" rel="stylesheet">
+		<link href="css/swipebox.css" rel="stylesheet">
+		<link href="css/style-pink.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link href="css/c97fed89bc324564b20f90a68d851f59.css" rel="stylesheet">
+		<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+		<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+		  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+		</script>
+		<link rel="stylesheet" href="css/style.css">
+		<style>
+*{
+	cursor: url(images/aqy.ico),auto
+}
+			.removeborder{
+			border: none;
+			background-color: white;
+			}
+			#panel,#flip
+			{
+				
+				float: left 100px;
+				padding:5px;
+			
+			}
+			#panel
+			{
+				display:none;
+			}
+			 #yujia{
+				 margin-top: -70px;
+			 }
+			 #cj{
+				 background-color: white;
+			margin: 70px;
+			padding-right: 30px;
+			            text-indent:2rem;
+			 }
+		
+			#xg{
+				
+				
+				position:relative;
+				animation:myfirst 5s linear 2s infinite alternate;
+				
+				-moz-animation:myfirst 5s linear 2s infinite alternate;
+				
+				-webkit-animation:myfirst 5s linear 2s infinite alternate;
+				
+				-o-animation:myfirst 5s linear 2s infinite alternate;
+			}
+			
+			@keyframes myfirst
+			{
+				0%   {left:0px; top:0px;}
+				25%  { left:200px; top:0px;}
+				50%  { left:200px; top:0px;}
+				75%  { left:0px; top:0px;}
+				100% {left:0px; top:0px;}
+			}
+			
+		
+			
+		
+			
+			
+		</style>
+		<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#div1").fadeToggle();
+				$("#div2").fadeToggle("slow");
+				$("#div3").fadeToggle(3000);
+				$("#div4").fadeToggle();
+				$("#div5").fadeToggle("slow");
+				$("#div6").fadeToggle(5000);
+			});
+		});
+		$(document).ready(function(){
+		  $("#flip").click(function(){
+		    $("#panel").slideToggle("slow");
+		  });
+		});
+$(document).ready(function(){
+	$("button").click(function(){
+		$.ajax({url:"txt/qf.txt",success:function(result){
+			$("#div7").html(result);
+		}});
+	});
+});
+
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$.ajax({url:"txt/qf2.txt",success:function(result){
+						$("#div8").html(result);
+					}});
+				});
+			});
+			</script>
+			<script>
+				$(document).ready(function(){
+					$("button").click(function(){
+						$.ajax({url:"txt/qf3.txt",success:function(result){
+							$("#div9").html(result);
+						}});
+					});
+				});
+				</script>
+				<script>
+					$(document).ready(function(){
+						$("button").click(function(){
+							$.ajax({url:"txt/qf4.txt",success:function(result){
+								$("#div10").html(result);
+							}});
+						});
+					});
+				$( document ).click(function() {
+				  $( "#toggle" ).toggle( "pulsate" );
+				});
+				// function myFunction(){
+				// 	alert("订阅成功");
+				// }
+				function validateForm(){
+					var x=document.forms["myForm"]["email"].value;
+					var atpos=x.indexOf("@");
+					var dotpos=x.lastIndexOf(".");
+					if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+						alert("不是一个有效的 e-mail 地址");
+				  		return false;
+					}
+				}
+					</script>
+	</head>
+	<body>
+		
+			<!--头部导航 -->
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+					 aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar top-bar"></span><span
+						 class="icon-bar middle-bar"></span><span class="icon-bar bottom-bar"></span></button><a class="logo" href="index.html"><img
+						 src="images/logo-pink.png" alt=""></a></div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<div id="search">
+						<form>
+							<div class="input-div"><input type="text" name="search" value="" placeholder="搜索"></div><a href="#" class="search-icon fa fa-search"></a>
+						</form>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">首页</a></li>
+						<li class="hasSub"><a href="about.html">健身课程</a>
+							<ul>
+								<li><a href="clients.html">无氧运动</a></li>
+								<li><a href="gallery-2.html">街健神技训练</a></li>
+								<li><a href="gallery-3.html">有氧运动</a></li>
+							</ul>
+						</li>
+						<li class="hasSub"><a href="blog.html">营养博客</a>
+							<ul>
+								<li><a target="_blank" href="post.html">营养饮食</a></li>
+								<li><a target="_blank" href="coach_full.html">睡眠</a></li>
+							</ul>
+						</li>
+						
+						
+						
+						
+							
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="slider-full" data-zs-speed="12000" data-zs-interval="7000" data-zs-switchSpeed="4000" data-zs-src='["assets/images/首页1.jpg", "assets/images/首页2.jpg", "assets/images/首页3.jpg"]'>
+			<div class="item">
+				<div class="container">
+					<div class="content">
+						<h3>从这里开始您的健身<br><span>打造完美身材</span></h3>
+						<p>走健身这条路注定很艰苦、但回报你的将是一辈子</p>
+						<div id="toggle"><a href="#" class="btn btn-pink btn-lg btn-black-bg">开始健身之旅</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="icons-best">
+			<div class="container">
+				<h3>健身时<br><span>需要注意的事项</span></h3>
+				<div class="icons row">
+					<button class=" removeborder"><img src="images/点击.jpg" ></button>
+					<br><br>
+					<div id="div1" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-1" style="background-image: url(images/1.jpg)">健身前的<br>热身运动</div>
+					<div id="div2" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-2" style="background-image: url(images/3.jpg)">健身时要<br>少喝多饮</div>
+					<div id="div3" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-3" style="background-image: url(images/2.jpg)">从小负荷<br>到大负荷</div>
+					<div id="div4" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-4" style="background-image: url(images/4.jpg)">注意饮食<br>补充能量</div>
+					<div id="div5" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-5" style="background-image: url(images/5.jpg)">饭后一小时<br>后健身</div>
+					<div id="div6" class="col-lg-2 col-md-4 col-sm-4 col-xs-6 col-ms-4 icon-6" style="background-image: url(images/6.jpg)">注意休息<br>不要熬夜</div>
+				</div>
+			</div>
+		</div>
+		<section class="trainings">
+					<div class="container">
+						<h3>健身课程</h3>
+						<div class="block-tabs row">
+							<div class="col-lg-8 col-md-8">
+								<div class="blocks-large">
+									<div class="block-large block-1 active" style="background-image: url(images/_trainings-1.jpg)"><a target="_blank" href="clients.html" class="btn btn-pink btn-lg btn-black-bg">开始吧
+											</a></div>
+									<div class="block-large block-2" style="background-image: url(images/c.jpg)"><a target="_blank" href="gallery-2.html" class="btn btn-pink btn-lg btn-black-bg">开始吧</a></div>
+									<div class="block-large block-3" style="background-image: url(images/_trainings-3.jpg)"><a target="_blank" href="gallery-3.html" class="btn btn-pink btn-lg btn-black-bg">开始吧</a></div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4">
+								<div class="items"><a href="clients.html" class="item item-1 active" data-block="block-1"><span class="header">无氧运动</span>
+										<p>器械增肌训练</p>
+									</a><a href="gallery-2.html" class="item item-2" data-block="block-2"><span class="header">街健神技训练</span>
+										<p>街头健身动作训练</p>
+									</a><a href="gallery-3.html" class="item item-3" data-block="block-3"><span class="header">有氧运动</span>
+										<p>有氧运动减脂</p>
+									</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+		<section id="yujia" class="block-white">
+			<div class="container">
+				<div class="bg" style="background-image: url(images/tup1.jpg);">
+					<div class="content">
+						<h3>瑜伽<br><span>修心养生</span></h3>
+						<div id="flip"><h4><span>什么是瑜伽?</span></h4></div>
+						<div id="panel"><h4><span>瑜伽是一个汉语词汇</span></h4>
+						<h4><span>最早是从印度梵语“yug”或“yuj”</span></h4>
+						<h4><span>而来瑜伽能够改善人们生理、心</span></h4>
+							<h4><span>理、精神等使人达到身体、心灵</span></h4>
+							<h4><span>与精神和谐统一</span></h4>
+						</div>
+						<a  target="_blank" href="https://baike.baidu.com/item/%E7%91%9C%E4%BC%BD/115154?fr=aladdin" class="btn btn-lg btn-pink">从现在开始吧</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+						
+		
+		</section>
+		<section class="coaches">
+			<div class="container">
+				<h3>我们的<span>健身教练</span></h3>
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 ">
+						<div class="item"><a href="#" class="photo"><img src="images/街头教练.jpg" class="full-width" alt="Coach"></a>
+							<div class="descr"><a href="#" class="header">WRGD<span> LING</span></a>年龄:<strong>19</strong><br>
+								<strong>街头健身</strong>运动员<br> 专业: <strong>街头健身</strong></div>
+							<div class="bottom"><a href="#" class="social-twitter fa fa-twitter"></a><a href="#" class="social-fb fa fa-facebook"></a><a
+								 href="#" class="social-inst fa fa-instagram"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 ">
+						<div class="item"><a href="#" class="photo"><img src="images/健身房教练.jpg" class="full-width" alt="Coach"></a>
+							<div class="descr"><a href="#" class="header">Tao<span>Dongjin</span></a>年龄:<strong>22</strong><br>
+								 健身房<strong>教练</strong><br>专业:<strong>健身</strong></div>
+							<div class="bottom"><a href="#" class="social-twitter fa fa-twitter"></a><a href="#" class="social-fb fa fa-facebook"></a><a
+								 href="#" class="social-inst fa fa-instagram"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 ">
+						<div class="item"><a href="#" class="photo"><img src="images/女教练.jpg" class="full-width" alt="Coach"></a>
+							<div class="descr"><a href="#" class="header">Jenny <span>Paster</span></a>年龄:<strong>25</strong><br>
+								瑜伽 <strong>教练</strong><br>专业:<strong>瑜伽</strong></div>
+							<div class="bottom"><a href="#" class="social-twitter fa fa-twitter"></a><a href="#" class="social-fb fa fa-facebook"></a><a
+								 href="#" class="social-inst fa fa-instagram"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xl-3 ">
+						<div class="item"><a href="#" class="photo"><img src="./images/健身房教练2.jpg" class="full-width" alt="Coach"></a>
+							<div class="descr"><a href="#" class="header">Nikolas <span>Paster</span></a>年龄:<strong>22</strong><br>
+								健身房 <strong>教练</strong><br>专业:<strong>健身</strong></div>
+							<div class="bottom"><a href="#" class="social-twitter fa fa-twitter"></a><a href="#" class="social-fb fa fa-facebook"></a><a
+								 href="#" class="social-inst fa fa-instagram"></a></div>
+						</div>
+					</div>
+				
+			</div>
+		</section>
+		<section class="block-dark">
+			<div class="bg" style="background-image: url(images/_weight-mask.png);">
+				<div class="container">
+					<h3>您有多余的脂肪吗？ <br><span>有氧运动快速燃烧你的脂肪</span></h3>
+										<p>我们为您制定了专属的健身计划，里面包括了一些器械健身和街头健身增加训练的趣味性，如果您有多余的脂肪可以多做有氧运动。为了您的健康和家人，请开始健身吧！</p><a target="_blank" href="gallery-3.html" class="btn btn-pink btn-lg btn-black-bg">开始吧</a>
+
+				</div>
+			</div>
+		</section>
+		<section class="calculator calculator-pink">
+			<div class="container">
+				<form class="row">
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<h3>计算您的 <span>理想体重</span></h3>
+					</div>
+					<div class="col-lg-1 col-md-2 col-sm-1 col-xs-12 col-ms-12"><label>性别:</label><label class="css-radio man fa fa-male"><input
+							 type="radio" name="sex" value="man"><span></span></label><label class="css-radio woman fa fa-female"><input
+							 type="radio" name="sex" value="woman" checked><span></span></label></div>
+					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 col-ms-12"><label>您的年龄:</label>
+						<div class="calc"><input type="text" name="age" id="age" value="21" /><a href="#" class="arrow-up fa fa-arrow-circle-up"></a><a
+							 href="#" class="arrow-down fa fa-arrow-circle-down"></a></div>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-3 col-xs-12 col-ms-12"><label>您的身高:</label>
+						<div class="calc"><input type="text" name="height" id="height" value="170" /><a href="#" class="arrow-up fa fa-arrow-circle-up"></a><a
+							 href="#" class="arrow-down fa fa-arrow-circle-down"></a></div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 col-ms-12">
+						<div class="result"><span>56</span>kg</div>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section class="cards">
+			<div class="container">
+				<h3>加入我们<span>健身团队</span></h3>
+				<div class="description">周一至周六免费健身房免费训练，周六还有专业训练教练指导你哦！</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-ms-4">
+						<div class="item"><img src="./images/健身卡.jpg" alt="Card 1">
+							<div class="price"><span class="header">会员卡</span><br><span class="val">$90</span>/月</div>
+							<div class="btns"><a href="cards.html" class="btn btn-pink">立即办理</a><a href="cards.html"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-ms-4">
+						<div class="item"><img src="images/健身卡2.jpg" alt="Card 2">
+							<div class="price"><span class="header">超级会员卡</span><br><span class="val">$160</span>/月</div>
+							<div class="btns"><a href="cards.html" class="btn btn-pink">立即办理</a><a href="cards.html"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-ms-4">
+						<div class="item"><img src="images/健身卡3.jpg" alt="Card 3">
+							<div class="price"><span class="header">帝王会员卡</span><br><span class="val">$299</span>/员</div>
+							<div class="btns"><a href="cards.html" class="btn btn-pink">立即办理</a><a href="cards.html"></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		</section>
+		<section class="skills parallax" style="background-image: url(./images/图片1.jpg);">
+			<div class="container">
+				<h3>团队<span>成就</span></h3>
+				<div class="row">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-ms-6">
+						<div id="div7" class="item"><span id="countUp-1">794</span>794人选择加入了我们的健身团队</div>
+				                <button id="cj" >查看详细</button>
+					</div>
+					<div  class="col-lg-3 col-md-3 col-sm-6 col-ms-6">
+						<div id="div8" class="item"><span id="countUp-2">97</span>制定了97个营养计划</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-ms-6">
+						<div id="div9"  class="item"><span id="countUp-3">100</span>2019年我们增加了140名健身教练</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 col-ms-6">
+						<div id="div10"  class="item"><span id="countUp-4">26</span>26名教练得到了健身冠军</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog" id="blog-main">
+			<div class="container">
+				<h3>营养<span>博客</span></h3>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="item"><a href="post.html" class="photo"><img src="picture/_food-1.jpg" class="full-width" alt="Food"></a>
+							<div class="description"><a href="post.html" class="header">对你的肌肉最好的选择</a>
+								<p class="text">按结构和功能的不同又可分为平滑肌、心肌和骨骼肌三种，按形态又可分为长肌、短肌、扁肌和轮匝肌。平滑肌主要构成内脏和血管，具有收缩缓慢、持久、不易疲劳等特点，心肌构成心壁，两者都不随人的意志收缩，故称不随意肌。骨骼肌分布于头、颈、躯干和四肢，通常附着于骨，骨骼肌收缩迅速、有力、容易疲劳，可随人的意志舒缩，故称随意肌。骨骼肌在显微镜下观察呈横纹状，故又称横纹肌。</p>
+							</div>
+							<div class="bottom">
+								<div class="row">
+									<div class="col-lg-6 col-sm-12  col-xs-4"><span class="date">January 2, 2017</span></div>
+									<div class="col-lg-6 col-sm-12  col-xs-8 col-ms-8 right">
+										<ul>
+											<li class="icon-fav fa fa-heart"><a href="#">212</a></li>
+											<li class="icon-comments fa fa-commenting"><a href="#">4</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="item"><a href="post.html" class="photo"><img src="picture/_food-2.jpg" class="full-width" alt="Food"></a>
+							<div class="description"><a href="post.html" class="header">10种蘑菇食谱</a>
+								<p class="text">蘑菇是大家都很熟悉的一种食材，可是你知道吗？全世界蘑菇的种类多达36000种，而进入人们餐桌的蘑菇则被称为食用蘑菇。蘑菇既不是植物，也不是动物，它是介于二者之间的真菌。蘑菇富含蛋白质、氨基酸等多种成分，可谓是营养丰富，多吃蘑菇对人体有很多好处。下面，就为大家介绍几种蘑菇的做法，保证你看完之后有去厨房的冲动，现在开始！</p>
+							</div>
+							<div class="bottom">
+								<div class="row">
+									<div class="col-lg-6 col-sm-12  col-xs-6"><span class="date">January 2, 2017</span></div>
+									<div class="col-lg-6 col-sm-12  col-xs-6 right">
+										<ul>
+											<li class="icon-fav fa fa-heart"><a href="#">162</a></li>
+											<li class="icon-comments fa fa-commenting"><a href="#">14</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4">
+						<div class="item"><a href="post.html" class="photo"><img src="picture/_food-3.jpg" class="full-width" alt="Food"></a>
+							<div class="description"><a href="post.html" class="header">怎么选择健康的肉？</a>
+								<p class="text">现在早已不再是那个吃不饱穿不暖的时代了，现在的人们不仅要吃饱还要吃好，更重要的就是健康。于是现在我们去商场买东西的时候就会看到好多无公害食品，在旅游业也兴起了许多农家乐，他们的食材都是自己种植或养殖的，纯天然的食物。</p>
+							</div>
+							<div class="bottom">
+								<div class="row">
+									<div class="col-lg-6 col-sm-12  col-xs-6"><span class="date">January 2, 2017</span></div>
+									<div class="col-lg-6 col-sm-12  col-xs-6 right">
+										<ul>
+											<li class="icon-fav fa fa-heart"><a href="#">55</a></li>
+											<li class="icon-comments fa fa-commenting"><a href="#">9</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="xg" class="btn-more"><div></div><img src="images/困难.jpg"><a target="_blank" href="blog.html" class="btn btn-pink">进入营养博客</a><img src="images/龙.jpg"></div>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-xs-12 col-ms-12"><span class="percent">-10%</span></div>
+					<div class="col-lg-4 col-md-4 col-xs-12 col-ms-12">
+				<h3>现在就订阅 <span>就有折扣</span></h3>
+					</div>
+					<div class="col-lg-6 col-md-6 col-xs-12 col-ms-12">
+						<form name="myForm" action="new_file.php" onsubmit="return validateForm();" method="post">
+							<div class="input-group"><input type="text"  class="form-control" placeholder="你的电子邮箱"><span class="input-group-btn"><input
+									 class="btn btn-black" type="submit" value="订阅"></span></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="block-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-ms-12"><img src="images/logo-pink.png" class="logo" alt="Stargym"></div>
+					<div class="col-lg-2 col-md-2 hidden-sm hidden-xs hidden-ms">
+						<h5>训练</h5>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+						<h5>输入你的联系方式</h5>
+					</div>
+					<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+						<h5>合理搭配食物健身效果更佳哦</h5>
+					</div>
+					<div class="col-lg-4 col-md-4 col-ms-6 block-contacts border-right">
+						<p>健身使你健康</p>
+						<ul class="address">
+							<li><span class="fa fa-map-marker"></span>柳州职业技术学院</li>
+							<li><span class="fa fa-phone"></span>10086</li>
+							<li><span class="fa fa-envelope"></span><a href="#">123456789@qq.com</a></li>
+						</ul>
+						<ul class="social social-big">
+							<li><a href="#" class="social-fb fa fa-facebook"></a></li>
+							<li><a href="#" class="social-twitter fa fa-twitter"></a></li>
+							<li><a href="#" class="social-youtube fa fa-youtube"></a></li>
+							<li><a href="#" class="social-inst fa fa-instagram"></a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-2 col-ms-6 menu-footer border-right">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+								<h5 class="hidden-md hidden-lg">Trainings</h5>
+								<ul>
+									<li><a target="_blank" href="coming.html">健身训练</a></li>
+											<li><a target="_blank" href="index.html">寻找你的健康</a></li>
+											<li><a target="_blank" href="https://baijiahao.baidu.com/s?id=1601309302772868482&wfr=spider&for=pc">健康生活</a></li>
+										</ul>
+									</div>
+									<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+										<h5>健身房</h5>
+										<ul>
+											<li><a target="_blank" href="about.html">训练</a></li>
+											<li><a target="_blank" href="https://baike.baidu.com/item/%E5%81%A5%E8%BA%AB%E6%95%99%E7%BB%83/7128289?fr=aladdin">什么是健身教练</a></li>
+											<li><a target="_blank" href="cards.html">俱乐部会员</a></li>
+											<li><a target="_blank" href="blog.html">博客</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12 border-right">
+						<h5 class="hidden-md hidden-lg">Contact us</h5>
+						<form><input type="text" name="name" placeholder="你的名字"><input type="text" name="email" placeholder="邮箱"><textarea
+							 name="text" placeholder="输入内容"></textarea><input type="submit"  name="发送" value="发送" class="btn btn-pink btn-black-bg"></form>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12">
+						<h5 class="hidden-md hidden-lg">Gall</h5>
+						<div class="gallery clearfix"><a href="#"><img src="picture/_footer-photo-1.png" alt="Gallery"></a><a href="#"><img
+								 src="picture/_footer-photo-2.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-3.png" alt="Gallery"></a><a
+							 href="#"><img src="picture/_footer-photo-4.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-5.png"
+								 alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-6.png" alt="Gallery"></a></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container"><a href="">第八小组</a>覃发 朱柳鑫 张凌智 韦春美 陶东进
+				&ndash; <a href="#">2020</a><a href="#" class="go-top fa fa-arrow-up hidden-xs hidden-ms"><span>回到顶部</span></a></div>
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+		<script type="text/javascript" src="js/jquery.scrollto-1.4.2-min.js"></script>
+		<script type="text/javascript" src="js/collapse.js"></script>
+		<script type="text/javascript" src="js/scrollreveal.js"></script>
+		<script type="text/javascript" src="js/countup.js"></script>
+		<script type="text/javascript" src="js/swiper.jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.matchheight.js"></script>
+		<script type="text/javascrsipt" src="js/jquery.swipebox.js"></script>
+		<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/jquery.zoomslider.js"></script>
+		<script src="js/map-pink.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		
+	</body>
+	
+</html>

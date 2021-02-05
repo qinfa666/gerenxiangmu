@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+	<title>营养博客</title>
+	
+	<link href="css/bootstrap-grid.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/zoomslider.css" rel="stylesheet">
+	<link href="css/swiper.css" rel="stylesheet">
+	<link href="css/swipebox.css" rel="stylesheet">
+	<link href="css/style-pink.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+
+	<link href="css/c97fed89bc324564b20f90a68d851f59.css" rel="stylesheet"> 
+
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+
+	<style>
+		*{
+			cursor: url(images/aqy.ico),auto
+		}
+		.snow-container {
+		  position: absolute;
+		  height: 2500px;
+		  width: 100%;
+		  max-width: 100%;
+		  top: 0;
+		  overflow: hidden;
+		  z-index: 2;
+		  pointer-events: none;
+		 
+		}
+		
+		.snow {
+		  display: block;
+		  position: absolute;
+		  z-index: 2;
+		  top: 0;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		  pointer-events: none;
+		  -webkit-transform: translate3d(0, -100%, 0);
+		          transform: translate3d(0, -100%, 0);
+		  -webkit-animation: snow linear infinite;
+		          animation: snow linear infinite;
+		}
+		.snow.foreground {
+		  background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+		  -webkit-animation-duration: 15s;
+		          animation-duration: 15s;
+		}
+		.snow.foreground.layered {
+		  -webkit-animation-delay: 7.5s;
+		          animation-delay: 7.5s;
+		}
+		.snow.middleground {
+		  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+		  -webkit-animation-duration: 20s;
+		          animation-duration: 20s;
+		}
+		.snow.middleground.layered {
+		  -webkit-animation-delay: 10s;
+		          animation-delay: 10s;
+		}
+		.snow.background {
+		  background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+		  -webkit-animation-duration: 30s;
+		          animation-duration: 30s;
+		}
+		.snow.background.layered {
+		  -webkit-animation-delay: 15s;
+		          animation-delay: 15s;
+		}
+		
+		@-webkit-keyframes snow {
+		  0% {
+		    -webkit-transform: translate3d(0, -100%, 0);
+		            transform: translate3d(0, -100%, 0);
+		  }
+		  100% {
+		    -webkit-transform: translate3d(15%, 100%, 0);
+		            transform: translate3d(15%, 100%, 0);
+		  }
+		}
+		
+		@keyframes snow {
+		  0% {
+		    -webkit-transform: translate3d(0, -100%, 0);
+		            transform: translate3d(0, -100%, 0);
+		  }
+		  100% {
+		    -webkit-transform: translate3d(15%, 100%, 0);
+		            transform: translate3d(15%, 100%, 0);
+		  }
+		}
+	</style>
+		
+	</style>>
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<div class="snow-container">
+  <div class="snow foreground"></div>
+  <div class="snow foreground layered"></div>
+  <div class="snow middleground"></div>
+  <div class="snow middleground layered"></div>
+  <div class="snow background"></div>
+  <div class="snow background layered"></div>
+</div>
+
+	<nav class="navbar navbar-fixed-top dark">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar top-bar"></span>
+					<span class="icon-bar middle-bar"></span>
+					<span class="icon-bar bottom-bar"></span>
+				</button>
+				<a class="logo" href="index.html"><img src="images/logo-pink.png" alt="StarGym"></a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+			
+				<div id="search">
+					<form>
+						<div class="input-div"><input type="text" name="search" value="" placeholder="Search"></div>
+						<a href="#" class="search-icon fa fa-search"></a>
+					</form>
+				</div>			
+				<ul class="nav navbar-nav">
+						<li ><a href="index.html">首页</a></li>
+						<li class="hasSub"><a href="about.html">健身教程</a>
+							<ul>
+								<li><a href="clients.html">无氧训练</a></li>
+								<li><a href="gallery-2.html">街健神技训练</a></li>
+								<li><a href="gallery-3.html">有氧运动</a></li>
+							</ul>
+						</li>
+						<li class="hasSub active"><a href="blog.html">营养博客</a>
+							<ul>
+								<li  class="active"><a href="post.html">营养饮食</a></li>
+								<li><a href="coach_full.html">睡眠</a></li>
+							</ul>
+						</li>
+						
+						
+						
+						
+							
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+			</div>		
+		</div>
+	</nav>
+	
+	<header>
+		<div class="container">
+			<h1>营养<span>博客</span></h1>
+			<ol class="bread">
+				<li>
+					<a href="index.html"><span>主页</span></a>
+				</li>
+				<li class="divider"><span>|</span></li>
+				<li>
+					<span>营养博客</span>
+				</li>
+			</ol>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="inner-two-col row">
+			<div class="col-lg-8">
+				<div class="blog">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="picture/_food-1.jpg" class="full-width" alt="Food"></a>
+								<div class="description">
+									<a href="post.html" class="header">对你的肌肉最好的选择</a>
+									<p class="text">
+										按结构和功能的不同又可分为平滑肌、心肌和骨骼肌三种，按形态又可分为长肌、短肌、扁肌和轮匝肌。平滑肌主要构成内脏和血管，具有收缩缓慢、持久、不易疲劳等特点，心肌构成心壁，两者都不随人的意志收缩，故称不随意肌。骨骼肌分布于头、颈、躯干和四肢，通常附着于骨，骨骼肌收缩迅速、有力、容易疲劳，可随人的意志舒缩，故称随意肌。骨骼肌在显微镜下观察呈横纹状，故又称横纹肌。 
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12  col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12  col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">162</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">14</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="picture/_food-2.jpg" class="full-width" alt="Food"></a>
+								<div class="description">						
+									<a href="post.html" class="header">10种蘑菇食谱</a>
+									<p class="text">
+										蘑菇是大家都很熟悉的一种食材，可是你知道吗？全世界蘑菇的种类多达36000种，而进入人们餐桌的蘑菇则被称为食用蘑菇。蘑菇既不是植物，也不是动物，它是介于二者之间的真菌。蘑菇富含蛋白质、氨基酸等多种成分，可谓是营养丰富，多吃蘑菇对人体有很多好处。下面，小李子就为大家介绍几种蘑菇的做法，保证你看完之后有去厨房的冲动，现在开始！ 
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12 col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12 col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">162</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">14</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>				
+						<div class="col-lg-6 col-md-6 col-sm-6 ">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="picture/_food-3.jpg" class="full-width" alt="Food"></a>
+								<div class="description">						
+									<a href="post.html" class="header">怎么选择健康的肉？</a>
+									<p class="text">
+										现在早已不再是那个吃不饱穿不暖的时代了，现在的人们不仅要吃饱还要吃好，更重要的就是健康。于是现在我们去商场买东西的时候就会看到好多无公害食品，在旅游业也兴起了许多农家乐，他们的食材都是自己种植或养殖的，纯天然的食物。
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12 col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12 col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">55</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">9</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 ">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="images/食物2.jpg" class="full-width" alt="Food"></a>
+								<div class="description">						
+									<a href="post.html" class="header">男人健身餐食谱一日三餐计划</a>
+									<p class="text">
+										不管是要增肌减脂还是其它，都是要配合饮食的，因为这么做有利于完成我们的目标，但是在饮食上，是有很多讲究的，不然随意就可以配合去增肌减脂的，是要有合理的减脂餐与增肌餐。那么，减脂餐与增肌餐的区别在哪里呢？下面就一起来看看区别在哪吧！
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12 col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12 col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">55</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">9</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 ">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="images/食物.jpg" class="full-width" alt="Food"></a>
+								<div class="description">						
+									<a href="post.html" class="header">女性健身餐食谱大全 这样吃最健康</a>
+									<p class="text">
+										女性健身其实还是和男性有很大区别的。在生理结构上，这两个群体就是很不一样的，分泌的激素也有很大差别。所以如果女性想健身的话，需要注意的事情也和男性有点区别。不止体现在动作和负荷上，也体现在吃上面。适合男性的健身餐不一定适合女性，作为女性的话，如果想吃健身餐，可以参照下面这份食谱的指导思想，可能会达到事半功倍的效果。
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12 col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12 col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">55</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">9</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-6 ">
+							<div class="item">
+								<a href="post.html" class="photo"><img src="picture/_food-6.jpg" class="full-width" alt="Food"></a>
+								<div class="description">						
+									<a href="post.html" class="header">什么食物含蛋白质高？</a>
+									<p class="text">
+										“蛋白质是由氨基酸组成的，是人体所必需的营养物质，而且是重要的供能物质。每克蛋白质可以提供4卡路里的热量，还有更重要的作用是可以促进人体的生长发育和新陈代谢。但是过量的蛋白质摄入会增加肾脏的负担
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="row">
+										<div class="col-lg-6 col-sm-12 col-xs-6">
+											<span class="date">营养博客</span>
+										</div>
+										<div class="col-lg-6 col-sm-12 col-xs-6 right">
+											<ul>
+												<li class="icon-fav fa fa-heart"><a href="#">55</a></li>
+												<li class="icon-comments fa fa-commenting"><a href="#">9</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+					<div class="pages">
+						<a href="blog.html" class="back disabled"><span class="fa fa-arrow-circle-left">上一页</span> </a>
+						<a href="blog.html" class="page active">1</a>
+						<a href="blog.html" class="page ">2</a>
+						<a href="blog.html" class="page ">3</a>
+						<a href="blog.html" class="next">下一页 <span class="fa fa-arrow-circle-right"></span></a>
+					</div>							
+				</div>
+		
+			</div>
+
+			<div class="col-lg-4">
+				<div class="block-col">
+					<div class="header">运动营养小知识</div>
+					<div class="content">
+						<ul>
+							<li class="active"><a href="#"><strong>运动所需的营养物质 <span>(4)</span></strong></a></li>
+							<li><a href="#">蛋白质 <span>(27)</span></a></li>
+							<li><a href="#">碳水化合物 <span>(33)</span></a></li>
+							<li><a href="#">维生素 <span>(3)</span></a></li>
+							<li><a href="#">脂肪 <span>(1)</span></a></li>
+							
+						</ul>
+					</div>
+				</div>
+
+				<div class="block-col">
+					<div class="header">搜索</div>
+					<div class="content">
+						<form class="form search-col" method="get">
+							<input type="text" name="search" value="" placeholder="输入你的内容">
+							<button type="submit" class="fa fa-search"></button>
+						</form>
+					</div>
+				</div>
+
+				<div class="block-col">
+					<div class="header">精选图片</div>
+					<div class="content">
+						<div class="gallery-small row">
+							<a href="assets/images/_gallery-1.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-1.jpg" class="full-width" alt="Gallery"></a>
+							<a href="assets/images/_gallery-2.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-2.jpg" class="full-width" alt="Gallery"></a>
+							<a href="assets/images/_gallery-3.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-3.jpg" class="full-width" alt="Gallery"></a>
+							<a href="assets/images/_gallery-4.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-4.jpg" class="full-width" alt="Gallery"></a>
+							<a href="assets/images/_gallery-5.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-5.jpg" class="full-width" alt="Gallery"></a>
+							<a href="assets/images/_gallery-6.jpg" class="swipebox col-lg-4 col-md-4 col-sm-6 col-xs-6"><img src="picture/_gallery-6.jpg" class="full-width" alt="Gallery"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="block-col">
+					<div class="header">标签</div>
+					<div class="content">
+						<div class="tags clearfix">
+							<a href="#">#健身房</a>
+							<a href="#">#健身</a>
+							<a href="#">#运动</a>
+							<a href="#">#营养</a>
+							<a href="#">#培训</a>
+							<a href="#">#食物</a>
+							<a href="#">#健美</a>
+							<a href="#">#体育</a>
+							<a href="#">#跑步</a>
+							<a href="#">#运动</a>
+							<a href="#">#早餐</a>
+							<a href="#">#午餐</a>
+							<a href="#">#晚餐</a>
+							<a href="#">#坚持</a>							
+						</div>						
+					</div>
+				</div>				
+			</div>
+
+		</div>
+	</div>
+
+
+	
+		<section class="block-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-ms-12">
+					<img src="images/logo-pink.png" class="logo" alt="Stargym">
+				</div>
+				<div class="col-lg-2 col-md-2 hidden-sm hidden-xs hidden-ms">					
+					<h5>训练</h5>
+									</div>
+									<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+										<h5>输入你的联系方式</h5>
+									</div>
+									<div class="col-lg-3 col-md-3 hidden-sm hidden-xs hidden-ms">
+										<h5>合理搭配食物健身效果更佳哦</h5>
+									</div>
+									<div class="col-lg-4 col-md-4 col-ms-6 block-contacts border-right">
+										<p>健身使你健康</p>
+										<ul class="address">
+											<li><span class="fa fa-map-marker"></span>柳州职业技术学院</li>
+											<li><span class="fa fa-phone"></span>10086</li>
+											<li><span class="fa fa-envelope"></span><a href="#">123456789@qq.com</a></li>
+										</ul>
+										<ul class="social social-big">
+											<li><a href="#" class="social-fb fa fa-facebook"></a></li>
+											<li><a href="#" class="social-twitter fa fa-twitter"></a></li>
+											<li><a href="#" class="social-youtube fa fa-youtube"></a></li>
+											<li><a href="#" class="social-inst fa fa-instagram"></a></li>
+										</ul>
+									</div>
+									<div class="col-lg-2 col-md-2 col-ms-6 menu-footer border-right">
+										<div class="row">
+											<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+												<h5 class="hidden-md hidden-lg">Trainings</h5>
+												<ul>
+													<li><a target="_blank" href="coming.html">健身训练</a></li>
+													<li><a target="_blank" href="index.html">寻找你的健康</a></li>
+													<li><a target="_blank" href="https://baijiahao.baidu.com/s?id=1601309302772868482&wfr=spider&for=pc">健康生活</a></li>
+												</ul>
+											</div>
+											<div class="col-lg-12 col-md-12 col-xs-6 col-ms-6">
+												<h5>健身房</h5>
+												<ul>
+													<li><a target="_blank" href="about.html">训练</a></li>
+													<li><a target="_blank" href="https://baike.baidu.com/item/%E5%81%A5%E8%BA%AB%E6%95%99%E7%BB%83/7128289?fr=aladdin">什么是健身教练</a></li>
+													<li><a target="_blank" href="cards.html">俱乐部会员</a></li>
+													<li><a target="_blank" href="blog.html">博客</a></li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12 border-right">
+										<h5 class="hidden-md hidden-lg">Contact us</h5>
+										<form><input type="text" name="name" placeholder="你的名字"><input type="text" name="email" placeholder="邮箱"><textarea
+											 name="text" placeholder="输入内容"></textarea><input type="submit" name="发送" value="发送" class="btn btn-pink btn-black-bg"></form>
+									</div>
+									<div class="col-lg-3 col-md-3 col-sm-12 col-ms-12">
+										<h5 class="hidden-md hidden-lg">Gallery</h5>
+										<div class="gallery clearfix"><a href="#"><img src="picture/_footer-photo-1.png" alt="Gallery"></a><a href="#"><img
+												 src="picture/_footer-photo-2.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-3.png" alt="Gallery"></a><a
+											 href="#"><img src="picture/_footer-photo-4.png" alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-5.png"
+												 alt="Gallery"></a><a href="#"><img src="picture/_footer-photo-6.png" alt="Gallery"></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+		<footer>
+		<div class="container">
+			<a href="http://bootstrapmb.com">第八小组</a>覃发 朱柳鑫 张凌智 韦春美 陶东进- <a href="#">2020</a>
+			<a href="#" class="go-top fa fa-arrow-up hidden-xs hidden-ms"><span>回到顶部</span></a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.js"></script>	
+
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollto-1.4.2-min.js"></script>
+
+
+	<script type="text/javascript" src="js/collapse.js"></script>
+	<script type="text/javascript" src="js/scrollreveal.js"></script>
+	<script type="text/javascript" src="js/countup.js"></script>
+	<script type="text/javascript" src="js/swiper.jquery.js"></script>
+	
+	<script type="text/javascript" src="js/jquery.matchheight.js"></script>
+	<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.zoomslider.js"></script>
+	
+    <script src="js/map-pink.js"></script>
+
+	<script type="text/javascript" src="js/scripts.js"></script>		
+
+ 
+	
+	
+</body>
+</html>
